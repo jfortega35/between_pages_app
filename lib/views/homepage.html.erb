@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div>
+      <h1><%= welcome_message && welcome_message != "" ? welcome_message : "Hello for the very first time" %></h1>
+      <form method="post" action="/">
+        <input type="submit" value="Go to Home">
+      </form>
+      <form method="post" action="/signin">
+        <input type="submit" value="Go to Sign In">
+      </form>
+    </div>
+  </body>
+</html>
